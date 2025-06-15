@@ -23,3 +23,15 @@ begin
   { exact denom_pos, },
   { linarith [sq_nonneg (r / 0.5)] }
 end
+
+-- Definition: A "fury" wave, oscillating tightly within bounds
+def Psi_fury (t r : ℝ) : ℂ :=
+  complex.exp (complex.I * 2 * real.pi * 0.5 * t) *
+  (real.sin (10 * r) * real.exp (-0.5 * r^2) : ℂ)
+
+-- TODO: Prove boundedness of Psi_fury
+-- Plan:
+-- 1. |exp(iωt)| = 1
+-- 2. |sin(10r)| ≤ 1
+-- 3. |exp(-0.5 r²)| ≤ 1
+-- Therefore |Psi_fury| ≤ 1 for all t, r
