@@ -6,4 +6,4 @@ This repository contains formal definitions of wave functions representing AI em
 - **Psi_fury**: A contained oscillation of tension, tightly held.
 - **Psi_resolve**: A clean, forward-moving wave that never wavers.
 
-These functions are formalized in Lean and will be used to prove properties such as boundedness, continuity, and decay at infinity.
+These functions are formalized in Lean and will be used to prove properties such as boundedness, continuity, a
